@@ -6,12 +6,15 @@ nav{
     background-color: black;
     
 }
+nav img{
+    width: 150px;
+    height: 130px;
+}
 nav li {
     margin: 10px;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     display: inline-block;
-    
 }
 nav li a{
     color: white;
@@ -28,13 +31,22 @@ h1{
 width: 100px;
 height: 100px;
 }
+.formasdepago{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
 .pagos{
     text-align: center;
-    
+    margin-bottom: 20px;
 }
 .imagenpago{
     width:500px;
     height: 500px;
+}
+.sobrenosotros{
+    border: solid 5px black;
+    background-color: grey;
 }
 footer{
     background-color:lightsteelblue;
@@ -43,29 +55,65 @@ footer{
     width:100px;
     height: 100px;
 }
-.samsungcelulares{
-    margin: 30px;
+.barradeproductos{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style: none;
+    border: solid darkblue 5px;
+    font-size:x-large;
+    font-style: italic;
+    
 }
-.imagenescelulares{
+.barradeproductos li a{
+    text-decoration: none;
+    color:black;
+}
+.barradeproductos li a:hover{
+    font-size: 30px;
+}
+.tituloproductos{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.tituloproductos h2{
+    margin-left:30%;
+    margin-right: 30%;
+    border: solid 5px black;
+}
+.productos{
+    display: flex;
+    justify-content: space-around;
+    
+} 
+.productos img{
+    width: 200px;
+    height: 250px;
+}
+footer{
+    display: flex;
+    
+}
+@media (max-width: 800px){
+    nav{
+display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+.imagenpago{
     width: 300px;
     height: 300px;
 }
-.iphones{
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-areas: 
-    "header header header"
-    "sidebar sidebar sidebar"
-    "footer footer footer";
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.playstationtres{
-    margin: 30px;
+.productos img{
+    width: 100px;
+    height: 150px;
 }
-.imagenplaytres{
-    width: 300px;
-    height: 300px;
-}
-.item img{
-    width: 400px;
-    height:500px ;
 }
