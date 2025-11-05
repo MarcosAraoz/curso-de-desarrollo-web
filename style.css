@@ -111,14 +111,21 @@ h1 {
   height: 350px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+.formulario {
+  background-color: gray;
   margin-left: 25%;
   margin-right: 25%;
   margin-bottom: 50px;
-  background-color: aquamarine;
-  border: 10px solid black;
+  border: 2px solid black;
+  border-radius: 3%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 50px;
 }
 
 footer {
