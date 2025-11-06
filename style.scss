@@ -4,19 +4,23 @@
 }
 nav{
     background-color: black;
+    margin: 0;
     
 }
-nav img{
+nav ul{
+    margin:0;
+}
+nav ul img{
     width: 150px;
     height: 130px;
 }
-nav li {
+nav ul li{
     margin: 10px;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     display: inline-block;
 }
-nav li a{
+nav ul li a{
     color: white;
 }
 h1{
@@ -116,12 +120,11 @@ footer p{
     color: white;
 }
 @media (max-width: 800px){
-    nav{
-display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-}
+    nav ul{display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
 .imagenpago{
     width: 300px;
     height: 300px;
@@ -135,5 +138,9 @@ display: flex;
     width: 200px;
     height: 190px;
     
+}
+.logogrande{
+    width:100%;
+    height: 150px;
 }
 }
